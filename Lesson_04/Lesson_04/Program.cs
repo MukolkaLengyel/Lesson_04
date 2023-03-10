@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics.CodeAnalysis;
 
 class Program
@@ -27,7 +27,7 @@ class Program
         int sum2 = 'b';
         int sum3 = 'c';
 
-        sum3 = maxValue(sum1, sum2); 
+        sum3 = maxValue(sum1, sum2);
         PrintResult(sum3);
 
         sum3 = minValue(sum1, sum2);
@@ -39,19 +39,19 @@ class Program
         Console.WriteLine("Result of int overloads is: " + result);
         Console.WriteLine("Result of double overloads is: " + result1);
 
-        /*//try of TrySumIfOdd inicialization in console
-        int start = 'a';
-        int end = 'b';
+        //try of TrySumIfOdd inicialization in console
+        int boolSum1 = 'a';
+        int boolSum2 = 'b';
         bool sum4 = false;
-        sum4 = TrySumIfOdd(start, end, out int isOdd);
-        sumIsOdd(Convert.ToInt32(sum4));*/
+
+        sumIsOdd(Convert.ToInt32(sum4));
 
         //Method that will return max value among all the parameters
         static int maxValue(int sum1, int sum2)
         {
-            if (sum1 > sum2) 
+            if (sum1 > sum2)
             {
-               
+
             }
 
             return sum1 + sum2;
@@ -78,33 +78,17 @@ class Program
             Console.WriteLine("Your min value result is: " + result2);
         }
 
-        /*//Method TrySumIfOdd
-        static bool TrySumIfOdd(int start, int end, out int sum4)
+        //Method TrySumIfOdd
+        static bool TrySumIfOdd(int boolSum1, int boolSum2, out int sum4)
         {
-            sum4 = 2;
-
-            if (start == end) return false;
-
-            if (start > end)
-            {
-                int temp = start;
-                start = end;
-                end = temp;
-            }
-
-            for (var i = start + 1; i < end; i++)
-            {
-                sum4 += i;
-            }
-            
+            sum4 = 0;
             bool isOdd = sum4 % 2 == 1;
             return isOdd;
         }
-
         static void sumIsOdd (int result3)
         {
             Console.WriteLine("Your odd sum result is: " + result3);
-        }*/
+        }
     }
 
 }
