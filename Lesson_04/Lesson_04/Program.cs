@@ -39,12 +39,12 @@ class Program
         Console.WriteLine("Result of int overloads is: " + result);
         Console.WriteLine("Result of double overloads is: " + result1);
 
-        //try of TrySumIfOdd inicialization in console
+        /*//try of TrySumIfOdd inicialization in console
         int start = 'a';
         int end = 'b';
         bool sum4 = false;
         sum4 = TrySumIfOdd(start, end, out int isOdd);
-        sumIsOdd(Convert.ToInt32(sum4));
+        sumIsOdd(Convert.ToInt32(sum4));*/
 
         //Method that will return max value among all the parameters
         static int maxValue(int sum1, int sum2)
@@ -78,7 +78,7 @@ class Program
             Console.WriteLine("Your min value result is: " + result2);
         }
 
-        //Method TrySumIfOdd
+        /*//Method TrySumIfOdd
         static bool TrySumIfOdd(int start, int end, out int sum4)
         {
             sum4 = 2;
@@ -104,7 +104,7 @@ class Program
         static void sumIsOdd (int result3)
         {
             Console.WriteLine("Your odd sum result is: " + result3);
-        }
+        }*/
     }
 
 }
